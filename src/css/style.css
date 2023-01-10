@@ -218,6 +218,9 @@ input[type=range]::-webkit-slider-runnable-track {
   color: #fff;
 }
 
+.footer {
+  margin-top: 40px;
+}
 .footer .container {
   display: flex;
   justify-content: space-around;
