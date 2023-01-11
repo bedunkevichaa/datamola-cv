@@ -25,16 +25,16 @@
       </div>
       
       <nav class="header__navigation">
-        <div class="header__menu-toggle">
+        <div class="header__menu-toggle" id="menuToggle">
           <span></span>
-          <ul class="header__menu">
+          <ul class="header__menu" id="menu">
             <li class="header__menu_item"><a href="#expirience">Experience</a></li>
             <li class="header__menu_item"><a href="#education">Education</a></li>
             <li class="header__menu_item"><a href="#skills">Skills</a></li>
             <li class="header__menu_item"><a href="#projects">Projects</a></li>
             <li class="header__menu_item"><a href="#languages">Languages</a></li>
             <li class="header__menu_item"><a href="#details">Details</a></li>
-            <li class="header__menu_item"><a href="#">Slider</a></li>
+            <li class="header__menu_item"><a href="#" id="slider">Slider</a></li>
           </ul>
         </div>
       </nav>
@@ -170,6 +170,48 @@
       </div>
     </div>
   </footer>
+
+  <div class="overlay-burger" id="overlay-burger"></div>
+  <div class="overlay" id="overlay"></div>
+
+  <section class="mems" id="mems">
+    <div class="container">
+      <button class="slide-arrow" id="slide-arrow-prev">
+        <img src="./src/assets/ico/arr_left.svg" alt="arr_left">
+      </button>
+      <button class="slide-arrow" id="slide-arrow-next">
+        <img src="./src/assets/ico/arr_right.svg" alt="arr_right">
+      </button>
+      <div class="carousel-wrapper" id="carousel-wrapper">
+        <ul class="slides-container" id="slides-container">
+          <li class="slide" id="item-left">
+            <div class="slide-card">
+              <img src="./src/assets/img/1.webp" alt="JS">
+            </div>
+          </li>
+          <li class="slide" id="item-active">
+            <div class="slide-card">
+              <img src="./src/assets/img/2jpg.jpg" alt="JS">
+          </li>
+          <li class="slide" id="item-right">
+            <div class="slide-card">
+              <img src="./src/assets/img/3.jpg" alt="JS">
+            </div>
+          </li>
+          <li class="slide">
+            <div class="slide-card">
+              <img src="./src/assets/img/4.jpg" alt="JS">
+            </div>
+          </li>
+          <li class="slide" id="item-right">
+            <div class="slide-card">
+              <img src="./src/assets/img/5.webp" alt="JS">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <script src="./src/js/index.js"></script>
 </body>
