@@ -270,6 +270,11 @@ input[type=range]::-webkit-slider-thumb {
   padding: 0;
 }
 
+.mems .slide-arrow:hover {
+  box-shadow: 0 0 10px var(--color-primary), inset 0 0 50px var(--color-primary);
+  transform: scale(1.1);
+}
+
 .disable {
   background: black;
   pointer-events: none;
@@ -285,6 +290,7 @@ input[type=range]::-webkit-slider-thumb {
   list-style: none;
   margin: 0;
   padding: 0;
+  left: -1050px;
   position: relative;
   /* left: -1202px; */
   width: 5300px;
@@ -296,12 +302,6 @@ input[type=range]::-webkit-slider-thumb {
 
 .mems .slide {
   width: 722px;
-  /*display: flex;
-  justify-content: center; */
-  /* max-width: 1160px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; */
 }
 
 .mems .slide-card {
@@ -314,7 +314,29 @@ input[type=range]::-webkit-slider-thumb {
   cursor: pointer;
 }
 
+@keyframes move-right {
+  from {left: -1199px;}
+  to {left: -2110px;}
+}
+
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 1s;
+}
+
+@keyframes move-left {
+  from {left: -1000px;}
+  to {left: 10px;}
+}
+
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 1s;
+}
+
+
 @media (max-width: 999px) {
+
   .container {
     max-width: 600px;
   }
@@ -478,7 +500,17 @@ input[type=range]::-webkit-slider-thumb {
   }
 
   .slides-container {
-    width: 2800px;
+    left: -1310px
+  }
+
+  @keyframes move-right {
+    from {left: -1190px;}
+    to {left: -2370px;}
+  }
+  
+  @keyframes move-left {
+    from {left: -1300px;}
+    to {left: -250px;}
   }
 
   .slides-container img {
@@ -503,7 +535,19 @@ input[type=range]::-webkit-slider-thumb {
 
   .slides-container {
     width: 1436px;
+    left: -287px;
   }
+
+  @keyframes move-right {
+    from {left: -287px;}
+    to {left: -574px;}
+  }
+  
+  @keyframes move-left {
+    from {left: -287px;}
+    to {left: 0px;}
+  }
+
   
   .mems .slide {
     width: 310px;
